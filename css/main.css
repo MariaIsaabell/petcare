@@ -1,0 +1,81 @@
+/* Reset do Browser/navegador */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #263138;
+}
+
+/* cabeçalho/header/menu */
+.menu {
+    background-color: #FF9A6C;
+    display: flex;  /* transforma um contêiner em flexível, organizando seus itens em linha ou coluna com controle fácil de alinhamento e espaçamento. */
+    align-items: center;
+    justify-content: space-between; /* distribui os itens em linha com espaços iguais entre eles, deixando o primeiro à esquerda e o último à direita. */
+    padding: 24px 80px; /* o primeiro número é o espaço entre o topo (header) e o final (footer). E o segundo número é o espaço das laterais */
+}
+
+.menu nav a{
+    color: #fff;
+    font-weight: 600; /* deixa o texto com uma espessura semi-negrito, mais grosso que o normal, mas menos que o negrito total (700). */
+    padding: 20px;
+    text-decoration: none; 
+}
+
+/* Deixar o menu fixo */
+.menu {
+    position: fixed;
+    top: 0; /* para sempre deixar ele no topo */
+    left: 0;
+    width: 100%; /* ocupar 100% da tela */
+    z-index: 100; /* define a ordem de sobreposição dos elementos na tela — quanto maior o valor, mais “por cima” o elemento aparece em relação aos outros (só funciona com position definido). || Coloca o header acima de outros elementos */
+}
+
+/* configuração da seção inicio */
+#inicio {
+    display: flex;
+    align-items: center;
+    gap: 32px; /* define o espaçamento entre os itens dentro de um contêiner flexível ou grid */
+    padding: 80px 80px 24px 80px;
+    position: relative;
+}
+
+h1, h2{
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 32px;
+}
+
+.paragafo {
+    line-height: 150%; /* define a altura da linha do texto como 150% do tamanho da fonte, aumentando o espaço entre as linhas de texto. */
+    margin-bottom: 32px;
+    
+}
+
+.botao {
+    background-color: #FF9A6C;
+    border-radius: 8px;
+    color: #fff;
+    padding: 10px 22px;
+    margin: 30px; /* distribui o espaçamento com os itens ao lado */
+    text-decoration: none;
+}
+
+.botao-transparente {
+    background-color: transparent;
+    color: #FF725E;
+    padding: 10px 22px;
+    text-underline-offset: 4px; /* move a **linha do sublinhado** 4 pixels **mais longe do texto**, criando um espaço entre o texto e o sublinhado para melhorar a aparência. */
+}
+
+.absolute {
+    position: absolute; /* posiciona um elemento em relação ao contêiner mais próximo com posição diferente de static. */
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    z-index: -10;
+}
