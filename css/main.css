@@ -47,30 +47,32 @@ body {
 h1, h2{
     font-size: 32px;
     font-weight: 600;
-    margin-top: 32px;
 }
 
-.paragafo {
+.paragrafo {
     line-height: 150%; /* define a altura da linha do texto como 150% do tamanho da fonte, aumentando o espaço entre as linhas de texto. */
-    margin-bottom: 32px;
-    
+    margin-bottom: 64px;    
 }
 
 .botao {
-    background-color: #FF9A6C;
+    display: inline-block;
+    background-color: #FFA07A; /* Exemplo de cor */
+    color: white;
+    padding: 12px 24px;
     border-radius: 8px;
-    color: #fff;
-    padding: 10px 22px;
-    margin: 30px; /* distribui o espaçamento com os itens ao lado */
     text-decoration: none;
+    font-weight: bold;
+    margin-top: 24px; /* Adiciona espaçamento acima */
 }
 
 .botao-transparente {
-    background-color: transparent;
-    color: #FF725E;
-    padding: 10px 22px;
-    text-underline-offset: 4px; /* move a **linha do sublinhado** 4 pixels **mais longe do texto**, criando um espaço entre o texto e o sublinhado para melhorar a aparência. */
+    display: inline-block;
+    margin-left: 16px; /* separa do botão anterior */
+    color: #d9534f; /* vermelho claro */
+    text-decoration: underline;
+    font-weight: 500;
 }
+
 
 .absolute {
     position: absolute; /* posiciona um elemento em relação ao contêiner mais próximo com posição diferente de static. */
@@ -79,3 +81,38 @@ h1, h2{
     width: 100%;
     z-index: -10;
 }
+
+/* Configuração Clínica */
+#clinica {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 80px 80px 24px 80px;
+    position: relative;
+    flex-direction: row-reverse; /* Isso inverte a ordem dos itens (imagem e outros elementos) */
+  }
+  
+#clinica h1, h2{
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 32px;
+    margin-bottom: 50px;
+}
+
+.paragrafo{
+    line-height: 150%; /* define a altura da linha do texto como 150% do tamanho da fonte, aumentando o espaço entre as linhas de texto. */
+    margin-bottom: 20px;  
+    text-align: left;
+    
+}
+
+ul {
+    padding-left: 30px;
+    list-style-type: disc; /* Garante que tenha bolinhas se quiser */
+  }
+  
+  ul li {
+    margin-bottom: 12px;
+    line-height: 1.5; /* Espaçamento interno das linhas */
+  }
+  
